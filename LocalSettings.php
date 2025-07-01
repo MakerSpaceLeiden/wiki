@@ -128,8 +128,6 @@ $wgDefaultSkin = "vector";
 
 # Enabled skins.
 # The following skins were automatically enabled:
-wfLoadSkin( 'CologneBlue' );
-wfLoadSkin( 'Modern' );
 wfLoadSkin( 'MonoBook' );
 wfLoadSkin( 'Vector' );
 
@@ -227,3 +225,10 @@ $wgPluggableAuth_Config['CRM(experimental)'] = [
 ];
 $wgOpenIDConnect_MigrateUsersByEmail = true;
 $wgOpenIDConnect_UseRealNameAsUserName = true;
+
+
+# Upload Wizard configuration
+# This extension provides support for uploading multiple images
+$wgEnableUploads = true;
+$wgUseImageMagick = true;
+wfLoadExtension( 'UploadWizard' );
