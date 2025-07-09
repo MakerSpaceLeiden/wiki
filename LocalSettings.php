@@ -124,7 +124,8 @@ $wgGroupPermissions['*']['edit'] = false;
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-$wgDefaultSkin = "vector";
+$wgDefaultSkin = "vector-2022";
+$wgDefaultUserOptions['vector-main-menu-pinned'] = 1;
 
 # Enabled skins.
 # The following skins were automatically enabled:
@@ -205,11 +206,6 @@ wfLoadExtension( 'PluggableAuth' );
 wfLoadExtension( 'OpenIDConnect' );
 
 $wgShowExceptionDetails = true; 
-
-# Manual override for Luke
-$wgGroupPermissions['Luke']['sysop'] = true;
-
-
 
 # Authentication
 $wgGroupPermissions['*']['autocreateaccount'] = true;
