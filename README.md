@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> This project has been migrated to https://code.makerspaceleiden.nl/msl/wiki
+
+
 # Makerspace Leiden MediaWiki
 
 A MediaWiki installation for Makerspace Leiden, providing a collaborative knowledge base for the makerspace community.
