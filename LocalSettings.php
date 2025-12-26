@@ -160,7 +160,7 @@ if ( is_file( "/etc/mediawiki-extensions/extensions.php" ) ) {
 # Add more configuration options below.
 $wgSitename = "MakerSpace Leiden";
 $wgMetaNamespace = "MakerSpace_Leiden";
-$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'svg','pdf','scad','sch','brd', 'JPG', 'PNG', 'PDF', 'avi', 'mov', 'mpg', 'f3d', 'zip' , 'mch');
+$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'svg','pdf','scad','sch','brd', 'JPG', 'PNG', 'PDF', 'avi', 'mov', 'mpg', 'f3d', 'zip' , 'mch', 'obj', 'stp', 'step', 'object');
 
 $wgDebugLogFile = "/var/log/mediawiki/debug-{$wgDBname}.log";
 $wgDBerrorLog = '/var/log/mediawiki/dberror.log';
