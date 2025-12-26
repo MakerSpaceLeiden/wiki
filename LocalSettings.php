@@ -210,13 +210,14 @@ $wgShowExceptionDetails = true;
 # Authentication
 $wgGroupPermissions['*']['autocreateaccount'] = true;
 $wgPluggableAuth_EnableLocalLogin = true;
-$wgPluggableAuth_Config['CRM(experimental)'] = [
+$wgPluggableAuth_Config['Log in with Intranet'] = [
     'plugin' => 'OpenIDConnect',
     'data' => [
         'providerURL' => 'https://mijn.makerspaceleiden.nl/oauth2',
         'clientID' => $_ENV['WIKI_OAUTH_CLIENT_ID'], 
         'clientsecret' => $_ENV['WIKI_OAUTH_CLIENT_SECRET'],
 	'scope' => ['openid', 'email'],
+    'preferred_username' => 'name',
     ]
 ];
 $wgOpenIDConnect_MigrateUsersByEmail = true;
